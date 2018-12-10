@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, intial-scale=1.0">
+     <meta name= "The Project Unfinished" content="Things That Get Me Happy"/>
+     <meta name="keywords" content="Red Dead Redemption, Vera, Me, ESPN, Games, Music"/>
+     <title>T.T.G.M.H</title>
+     <link rel="stylesheet" href="css/index.css" media="all">
+     <link rel="stylesheet" href="css/print.css" media="print">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unlock">
+     <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+</head>
+<body class="row">
+    <header>
+        <nav id="mySideNav" class="sidenav">
+             <a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a>
+             <a href="index.html">Project</a>
+             <a href="https://www.espn.com">espn</a>
+             <a href="https://www.linkedin.com/in/jeff-demin-43590363/">linkedin</a>
+            </nav>
+            </header>
+    <article id="main">
+    <section class="col-6" style="margin-top:5%;">
+          <h1>Things that Get Me Happy</h1>
+            <details class="whiteBack">
+                <summary>Happy..</summary>
+                  <p>Deez do da Trik</p>
+                     <p><cite><iframe width="500" height="400" src="https://www.youtube.com/embed/d-diB65scQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></cite></p>
+                     <p><cite><iframe width="500" height="400" src="https://www.youtube.com/embed/uq-gYOrU8bA?list=RDuq-gYOrU8bA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></cite></p>
+                     <p><cite><iframe width="500" height="400" src="https://www.youtube.com/embed/9p3DzUwxI0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></cite></p>
+                  <p>J <br>
+                  <p>D</p>
+            </details>
+            <details class="whiteBack" style="page-break-before:always;">
+                 <summary>Games...</summary>
+                     <ul>
+                          <li><a href="http://rockstargames.com/">Rockstar<br>....</a></li>
+                          <li><a href="https://www.callofduty.com/blackops4">TrollArch<br>....</a></li>
+                          <li><a href="https://fallout.bethesda.net/">Bethesda<br>....</a></li>
+                          <li><a href="https://www.playstation.com/en-us/">Playstation<br>....</a></li>
+                     </ul>
+            </details>
+    </section>
+    <section class="col-1"><!-- gutter --></section>
+    <section class="col-4 noprint center" style="width:250px;padding:10px;background:black;border:lightseagreen 15px solid;margin:auto;    
+    margin-top:5%;outline: 5px solid black;">
+            <script>
+                var Image = new Array("media/0.jpg","media/1.jpg","media/2.jpg");
+                var ImageNum =0;
+                var ImageLength = Image.length - 1;
+
+                function changeImage(number){
+    	    ImageNum = ImageNum + number;
+    	    if (ImageNum > ImageLength)
+    	   		 ImageNum=0;
+    	    if (ImageNum < 0 )
+    	         ImageNum=ImageLength;
+        
+    	 document.getElementById("mySlides").src = Image[ImageNum];
+    	 return;        
+    	}
+            </script>
+            <p><img alt="blah bleh bla" id="mySlides" src="media/0.jpg" /></p>
+            <button type="button" id="previous" onclick="changeImage(-1)">Previous</button>
+            <button type="button" id="next" style="float:right;" onclick="changeImage(1)">Next</button>     
+</section>
+    <div id="no print">
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width ="250px";
+                document.getElementById("main").style.marginLeft ="250px";
+            }
+            function closeNav(){
+                document.getElementById("mySidenav").style.width ="0";
+                document.getElementById("main").style.marginLeft ="0";
+            }
+        </script>
+    </div>
+    </article>
+    <footer class="col-12 icon-bar">
+        <a class="active" href="https://elearn.nmc.edu/user/profile.php?id=285008"><i class="fa fa-home"></i></a> &copy; Jeff Demin
+    </footer>
+</body>
+</html>     
